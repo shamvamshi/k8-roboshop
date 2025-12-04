@@ -25,14 +25,14 @@ spec:
   replicas: 1
   # These are the labels replica set use to create pod replicas, this should match pod labels
   selector:
-    matchLabels:
+    matchLabels: # these are replica set labels
       component: catalogue
       project: roboshop
       tier: app
     # This is Pod definition
   template:
     metadata:
-      labels:
+      labels: # these are pod labels
         component: catalogue
         project: roboshop
         tier: app
