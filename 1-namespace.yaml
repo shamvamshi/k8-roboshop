@@ -1,7 +1,8 @@
+# This is the syntax to create Namespace
 apiVersion: v1
 kind: Namespace
 metadata:
   name: roboshop
   labels:
     project: roboshop
-    environment: dev 
+    environment: dev
