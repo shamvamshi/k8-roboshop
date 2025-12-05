@@ -21,8 +21,8 @@ spec:
         component: mysql
         project: roboshop
         tier: database
-spec:
-  containers:
-  - name: mysql
-    image: sham6779/mysql:v1
+    spec:
+      containers:
+      - name: mysql
+        image: sham6779/mysql:v1
 
