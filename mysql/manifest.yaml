@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql
+  namespace: roboshop
+  labels:
+    component: mysql
+    project: roboshop
+    tier: database
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      component: mysql
+      project: roboshop
+      tier: database
+  
+  template:
+    metadata:
+      labels:
+        component: mysql
+        project: roboshop
+        tier: database
+spec:
+  containers:
+  - name: mysql
+    image: sham6779/mysql:v1
+
