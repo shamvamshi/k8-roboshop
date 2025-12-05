@@ -20,19 +20,20 @@ metadata:
   labels:
     component: shipping
     project: roboshop
-    app: app
+    tier: app
 spec:
   replicas: 1
   selector:
     matchLabels:
       component: shipping
       project: roboshop
-      app: app
+      tier: app
   template:
-    labels:
-      component: shipping
-      project: roboshop
-      app: app
+    metadata:
+      labels:
+        component: shipping
+        project: roboshop
+        tier: app
   spec:
     containers:
     - name: shipping
@@ -50,12 +51,12 @@ metadata:
   labels:
     component: shipping
     project: roboshop
-    app: app
+    tier: app
 spec:
   selector:
     component: shipping
     project: roboshop
-    app: app
+    tier: app
   ports:
   - protocol: TCP
     port: 8080
