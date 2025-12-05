@@ -41,12 +41,13 @@ spec:
         image: sham6779/user:v1
         envFrom:
         - configMapRef:
-          name: user
+            name: user
 ---
 apiVersion: v1
 kind: Service
 metadata:
   name: user
+  namespace: roboshop
   labels:
     component: user
     project: roboshop
