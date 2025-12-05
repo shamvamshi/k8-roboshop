@@ -9,8 +9,8 @@ metadata:
     tier: database
 type: Opaque
 data:
-  RABBITMQ_DEFAULT_USER: roboshop
-  RABBITMQ_DEFAULT_PASS: roboshop123
+  RABBITMQ_DEFAULT_USER: "cm9ib3Nob3A="
+  RABBITMQ_DEFAULT_PASS: "cm9ib3Nob3AxMjM="
 ---
 apiVersion: apps/v1
 kind: Deployment
