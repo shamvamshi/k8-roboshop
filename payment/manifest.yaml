@@ -56,9 +56,9 @@ spec:
         image: sham6779/payment:v1
         envFrom:
         - configMapRef:
-          name: payment
+            name: payment
         - secretRef:
-          name: payment
+            name: payment
 ---
 
 apiVersion: v1
