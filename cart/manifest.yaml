@@ -7,10 +7,10 @@ metadata:
     component: cart
     project: roboshop
     tier: app
-  data: 
-    REDIS_HOST: "redis"
-    CATALOGUE_HOST: "catalogue"
-    CATALOGUE_PORT: "8080"
+data: 
+  REDIS_HOST: "redis"
+  CATALOGUE_HOST: "catalogue"
+  CATALOGUE_PORT: "8080"
 
 ---
 apiVersion: apps/v1
@@ -39,9 +39,9 @@ spec:
       containers:
       - name: cart
         image: sham6779/cart:v1
-      envFrom:
-      - configMapRef:
-          name: cart
+        envFrom:
+        - configMapRef:
+            name: cart
 ---
 
 apiVersion: v1
