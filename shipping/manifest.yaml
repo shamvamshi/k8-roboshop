@@ -34,13 +34,13 @@ spec:
         component: shipping
         project: roboshop
         tier: app
-  spec:
-    containers:
-    - name: shipping
-      image: sham6779/shipping:v1
-      envFrom:
-      - configMapRef:
-          name: shipping
+    spec:
+      containers:
+      - name: shipping
+        image: sham6779/shipping:v1
+        envFrom:
+        - configMapRef:
+            name: shipping
 ---
 
 apiVersion: v1
